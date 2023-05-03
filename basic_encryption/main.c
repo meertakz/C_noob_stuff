@@ -16,10 +16,10 @@ int main(void)
     //// open dictionary file
     FILE *dictionary=fopen(FILENAME,"r");
 
-    //// scan how many lines will be scanned
+    //// scan the first int
     fscanf(dictionary, "%d", &lines);
 
-    //// fill up the dictionary into two different arrays
+    //// fill up the dictionary
     for (int i=0;i<lines;i++)
     {
         fscanf(dictionary,"%s %s", replace[i], word[i]);
@@ -31,14 +31,14 @@ int main(void)
     char strings[100][100];
     int n=0;
 
-    //// fill up strings array with the source
+    //// fill up strings array
     while (fscanf(input,"%s", strings[n])!=EOF)
     {
         n++;
     }
     fclose(input);
 
-    //// doing the transformation
+    //// transformation
     for (int j=0; j<n; j++)
     {
         for (int k=0; k<lines; k++)
