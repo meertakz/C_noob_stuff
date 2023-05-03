@@ -24,7 +24,6 @@ int main(void)
     {
         fscanf(dictionary,"%s %s", replace[i], word[i]);
     }
-    //// close file
     fclose(dictionary);
 
     //// scan the source.txt
@@ -37,7 +36,6 @@ int main(void)
     {
         n++;
     }
-    //// close file
     fclose(input);
 
     //// doing the transformation
@@ -62,6 +60,5 @@ int main(void)
             fprintf(output,"\n");
         }
     }
-    //// close output file
     fclose(output);
 }
