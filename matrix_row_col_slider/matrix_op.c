@@ -3,7 +3,7 @@
 //
 #include <stdio.h>
 #include <string.h>
-#define FILENAME "text_files/matrix.txt"
+#define FILENAME "matrix.txt"
 
 int main() {
     int matrix[10][10];
