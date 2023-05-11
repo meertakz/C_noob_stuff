@@ -4,9 +4,9 @@
 #include <stdio.h>
 #include <string.h>
 
-#define FILENAME "text_files/dictionary.txt"
-#define FILENAME_2 "text_files/source.txt"
-#define FILENAME_3 "text_files/output.txt"
+#define FILENAME "dictionary.txt"
+#define FILENAME_2 "source.txt"
+#define FILENAME_3 "output.txt"
 
 int main(void)
 {
