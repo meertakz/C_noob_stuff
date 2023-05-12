@@ -1,4 +1,4 @@
-# Write a program that, after reading from keyboard the names of two checkpoints (entry and exit, respectively), verifies whether it is possible to reach the exit checkpoint directly (i.e., in one single motorway section), starting from the entry one. If so, it should display the corresponding fare with two decimal digits.
+ Write a program that, after reading from keyboard the names of two checkpoints (entry and exit, respectively), verifies whether it is possible to reach the exit checkpoint directly (i.e., in one single motorway section), starting from the entry one. If so, it should display the corresponding fare with two decimal digits.
 
 # If it is not possible to reach the exit checkpoint directly, the program should verify whether it is possible to reach it in a maximum of three consecutive motorway sections, and display:
 
