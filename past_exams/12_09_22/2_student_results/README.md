@@ -19,11 +19,17 @@ int main (int argc, char *argv[])
 {
 
 student listStudents[100], *selStudents[100];
+
 int i, n = readStudents(listStudents, 100, argv[1]);
+
 int threshold = 18;
+
 int nSuff = selectStudents(listStudents, n, selStudents, threshold); printResults(selStudents,nSuff,argv[2]);
+
 ... // rest of the program (omitted)
+
 return 0;
+
 }
 `
 ____________________________________
