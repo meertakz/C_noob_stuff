@@ -25,6 +25,8 @@ Output of the function:
 
 ``
 1 string/s with length 2
+
 3 string/s with length 4
+
 25.00% with all capital letters Value returned by the function: 4
 ``
