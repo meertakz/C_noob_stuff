@@ -17,6 +17,7 @@ ____________________________________
 `
 int main (int argc, char *argv[]) 
 {
+
 student listStudents[100], *selStudents[100];
 int i, n = readStudents(listStudents, 100, argv[1]);
 int threshold = 18;
