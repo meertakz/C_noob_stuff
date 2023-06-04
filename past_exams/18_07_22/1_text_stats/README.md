@@ -22,6 +22,7 @@ viVa la VIDA loca
 `
 ______________
 Output of the function:
+
 `
 1 string/s with length 2
 3 string/s with length 4
