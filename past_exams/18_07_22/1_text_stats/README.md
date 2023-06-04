@@ -3,6 +3,10 @@ Assume that a text file contains a list of alphabetical strings of maximum 20 ch
 separated by either spaces or newlines (no punctuations). The total number of the strings is not known.
 
 Write a function that receives the name of the input file and prints on the screen the following:
-___. 
+______________
 - The occurrence of words of each possible length (1 character, 2 characters, ... 20 characters)
 - The percentage of strings that have all capital letters
+______________
+`
+int textStats(char* filename)
+`
