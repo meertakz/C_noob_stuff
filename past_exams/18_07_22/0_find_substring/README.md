@@ -7,5 +7,5 @@ ____________________________________
 The function should return a pointer to the first occurrence of the whole sequence of characters of s2 in s1
 
 (‘\0’ excluded), or a NULL pointer if the sequence is not present.
-
+____________________________________
 NB. You can use the functions of <string.h> in your implementation, but NOT strstr()!
