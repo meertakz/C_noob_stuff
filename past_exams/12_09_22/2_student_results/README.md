@@ -14,7 +14,7 @@ contain any spaces.
 
 Consider the following fragment of code:
 ____________________________________
-`
+``
 int main (int argc, char *argv[]) 
 {
 
@@ -31,7 +31,7 @@ int nSuff = selectStudents(listStudents, n, selStudents, threshold); printResult
 return 0;
 
 }
-`
+``
 ____________________________________
 1) The function readStudents (omitted) reads the input file and stores the data of all the students that took the exam into the array listStudents, returning the number of read students to the caller.
 2) The function selectStudents selects the students that obtained a score higher or equal to the threshold (in this case, 18). The pointers to the selected students are stored in the array selStudents, and the total number of selected students is returned to the caller.
