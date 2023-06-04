@@ -31,6 +31,7 @@ int nSuff = selectStudents(listStudents, n, selStudents, threshold); printResult
 return 0;
 
 }
+
 ``
 ____________________________________
 1) The function readStudents (omitted) reads the input file and stores the data of all the students that took the exam into the array listStudents, returning the number of read students to the caller.
