@@ -10,7 +10,9 @@ ________________________________________________________________________________
 
 If the input date is not correctly formatted (for example: 09/12-1998 ) 
 
-or it is not a correct date (for example: 45-01-2001, 10-13-2003), the function should print an error message. 
+or it is not a correct date (for example: 45-01-2001, 10-13-2003)
+
+the function should print an error message. 
 
 __________________________________________________________________________________________________________________
 
