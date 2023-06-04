@@ -15,6 +15,7 @@ contain any spaces.
 Consider the following fragment of code:
 ____________________________________
 ``
+
 int main (int argc, char *argv[]) 
 {
 
