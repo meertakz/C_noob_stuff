@@ -5,8 +5,6 @@ char* findSequence(char s[], char ch, int n)
 ```
 ________________________________________________________________________
 
+If such sequence exists, the function should return the pointer to the first
 
-________________________________________________________________________
-If such sequence exists, the function should return the pointer to the
-
-first occurrence of the whole sequence. Otherwise, it should return a NULL pointer.
+occurrence of the whole sequence. Otherwise, it should return a NULL pointer.
