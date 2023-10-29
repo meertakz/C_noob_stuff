@@ -40,8 +40,6 @@ int main()
         printf("%p \n", ptr+i);
     printf("==============\n\n");
 
-    
     /// free ///
     free(ptr);
-
 }
