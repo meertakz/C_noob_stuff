@@ -12,7 +12,6 @@ int main (int argc, char * argv[])
     return 0;
 }
 
-
 /* __from terminal__
  * compile       ==>      gcc -o argc_argv argc_argv
  * run           ==>      ./argc_argv
