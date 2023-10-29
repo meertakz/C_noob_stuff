@@ -41,10 +41,6 @@ int main()
     printf("==============\n\n");
 
     
-    // check for error
-    if (ptr == NULL)
-        printf(stderr, "memory allocation error\n");
-
     /// free ///
     free(ptr);
 
