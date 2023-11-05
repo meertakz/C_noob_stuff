@@ -54,19 +54,19 @@ segment_t *load(char *name, int *n){
     }
 
     i = 0;
+    fprintf(stdout, "\n--------------------------------------------------------------------------------\n");
     while (i<*n && fscanf(fp, "%d %d %d %d", &x1, &y1, &x2, &y2)!=EOF){
         skip = 0;
         length = (x2 - x1) * (x2 - x1) + (y2 - y1) * (y2-y1);
-
         if (length==0){
-            fprintf(stdout, "----------> segment %2d %2d %2d %2d || length zero (ignored) <------------\n", x1, y1, x2, y2);
+            fprintf(stdout, "---------------> segment %2d %2d %2d %2d || length zero (ignored) <-----------------\n", x1, y1, x2, y2);
             skip = 1;
         }
         for (j=0; j<i && skip==0; j++){
             if ((x1==segments[j].x1 && y1==segments[j].y1 && x2==segments[j].x2 && y2==segments[j].y2)
             || (x1==segments[j].x2 && y1==segments[j].y2 && x2==segments[j].x1 && y2==segments[j].y1))
             {
-                fprintf(stdout,"----------> segment %2d %2d %2d %2d || duplicated  (ignored) <------------\n", x1, y1, x2, y2);
+                fprintf(stdout,"---------------> segment %2d %2d %2d %2d || duplicated  (ignored) <-----------------\n", x1, y1, x2, y2);
                 skip = 1;
             }
         }
@@ -83,6 +83,7 @@ segment_t *load(char *name, int *n){
     *n = i;
 
     fclose(fp);
+    fprintf(stdout, "--------------------------------------------------------------------------------\n");
 
     return segments;
 }
@@ -150,6 +151,7 @@ void check(segment_t *segments, int n){
             overconnected++;
         }
     }
+    fprintf(stdout, "--------------------------------------------------------------------------------\n");
     if (disconnected > 2){
         fprintf(stdout, "broken line with %d disconnected segments\n", disconnected/2-1);
     }
@@ -159,4 +161,5 @@ void check(segment_t *segments, int n){
     if (disconnected<=2 && overconnected==0){
         fprintf(stdout, "single broken line\n");
     }
+    fprintf(stdout, "--------------------------------------------------------------------------------\n");
 }
