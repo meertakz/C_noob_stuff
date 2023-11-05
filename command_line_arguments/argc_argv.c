@@ -13,7 +13,7 @@ int main (int argc, char * argv[])
 }
 
 /* __from terminal__
- * compile       ==>      gcc -o argc_argv argc_argv
+ * compile       ==>      gcc -o argc_argv argc_argv.c
  * run           ==>      ./argc_argv
  * add arguments ==>      ./argc_argv arg1 arg2 arg3
  */
