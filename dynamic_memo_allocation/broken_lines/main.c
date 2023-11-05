@@ -59,14 +59,14 @@ segment_t *load(char *name, int *n){
         length = (x2 - x1) * (x2 - x1) + (y2 - y1) * (y2-y1);
 
         if (length==0){
-            fprintf(stdout, "segment %2d %2d %2d %2d - length zero (ignored)\n", x1, y1, x2, y2);
+            fprintf(stdout, "----------> segment %2d %2d %2d %2d || length zero (ignored) <------------\n", x1, y1, x2, y2);
             skip = 1;
         }
         for (j=0; j<i && skip==0; j++){
             if ((x1==segments[j].x1 && y1==segments[j].y1 && x2==segments[j].x2 && y2==segments[j].y2)
             || (x1==segments[j].x2 && y1==segments[j].y2 && x2==segments[j].x1 && y2==segments[j].y1))
             {
-                fprintf(stdout,"segment %2d %2d %2d %2d - duplicated (ignored)\n", x1, y1, x2, y2);
+                fprintf(stdout,"----------> segment %2d %2d %2d %2d || duplicated  (ignored) <------------\n", x1, y1, x2, y2);
                 skip = 1;
             }
         }
@@ -127,19 +127,19 @@ void check(segment_t *segments, int n){
     overconnected = 0;
 
     for (i=0; i<n; i++){
-        fprintf(stdout, "segment %2d %2d %2d %2d - ", segments[i].x1, segments[i].y1, segments[i].x2, segments[i].y2);
-        fprintf(stdout, "left extreme: ");
+        fprintf(stdout, "segment %2d %2d %2d %2d ", segments[i].x1, segments[i].y1, segments[i].x2, segments[i].y2);
+        fprintf(stdout, "|| left extreme: ");
         if (segments[i].used1 == 0){
             fprintf(stdout, "disconnected ");
             disconnected++;
         } else if (segments[i].used1 == 1) {
-            fprintf(stdout, "OK     ");
+            fprintf(stdout, "OK           ");
         } else {
             fprintf(stdout, "overconnected");
             overconnected++;
         }
         // ******************************* //
-        fprintf(stdout, ";  right extreme: ");
+        fprintf(stdout, "|| right extreme: ");
         if (segments[i].used2 == 0){
             fprintf(stdout, "disconnected\n");
             disconnected++;
