@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 #define FILEPATH "input1.txt"
 #define N 1
 
