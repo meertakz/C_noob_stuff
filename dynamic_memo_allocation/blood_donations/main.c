@@ -61,14 +61,12 @@ donor_t *donor_read (int *num_ptr){
         n++;
     }
     fclose(fp);
-
     // allocate the dynamic array
     donors = (donor_t *)malloc(n * sizeof(donor_t));
     if (donors==NULL){
         fprintf(stderr, "memory allocation error\n");
         exit(EXIT_FAILURE);
     }
-
     // read file contents
     strcpy(name, "files/voluntary.txt");
     fp = fopen(name,"r");
@@ -133,6 +131,8 @@ int id_search(donor_t *donors, char id[MAX_ID+1], int n){
     }
     return -1;
 }
+
+
 
 void result_display(donor_t *donors, int n){
     int i;
