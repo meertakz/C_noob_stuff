@@ -1,3 +1,4 @@
+// binary search
 #include <stdio.h>
 #define MAX 10
 #define WANNAFIND 101
