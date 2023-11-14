@@ -1,4 +1,3 @@
-// euclidian greatest commond divisor
 #include <stdio.h>
 
 int gcd(int x, int y) {
@@ -10,8 +9,11 @@ int gcd(int x, int y) {
 }
 
 int main() {
-    int a = 8, b = 20;
+    int a = 13, b = 20;
     int result = gcd(a, b);
-    printf("|| %d and %d || > %d <\n", a, b, result);
+    if (result <= 1)
+        printf("|| %d and %d || do not have gcd\n", a, b);
+    else
+        printf("|| %d and %d || > %d <\n", a, b, result);
     return 0;
 }
