@@ -9,7 +9,7 @@ int gcd(int x, int y) {
 }
 
 int main() {
-    int a = 13, b = 20;
+    int a = 20, b = 6;
     int result = gcd(a, b);
     if (result <= 1)
         printf("|| %d and %d || do not have gcd\n", a, b);
