@@ -1,6 +1,6 @@
 // string reverser
 #include <stdio.h>
-#define max 50
+#define max 15
 
 
 void reverse_print (char *s){
@@ -14,7 +14,6 @@ void reverse_print (char *s){
 
 int main(){
     char str[max+1];
-    char strs;
     printf("input string: ");
     scanf("%s", str);
     printf("reverse string is --> ");
