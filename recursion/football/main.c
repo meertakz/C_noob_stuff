@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-
 // prototypes
 char **read_file(int *dim);
 void play_r(char **scheme, char *column, int n, int row, FILE *fp);
@@ -37,6 +36,7 @@ int main()
     free(column);
     return 0;
 }
+
 
 // load input scheme from the file
 char **read_file(int *dim){
@@ -74,6 +74,7 @@ char **read_file(int *dim){
     *dim = n;
     return scheme;
 }
+
 
 // column expansion recursive function
 void play_r(char **scheme, char *column, int n, int row, FILE *fp) {
