@@ -1,3 +1,4 @@
+/// ** print every possibility ** ///
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
