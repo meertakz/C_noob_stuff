@@ -19,7 +19,11 @@ Then, the program has to:
 - move right and print Verdi (first +):
 
 Giallo_Antonio A2B2C2D2E2F2G2H2 13.11.2007 1140
+
 Verdi_Federica A3B3C3D3E3F3G3H3 25.09.1989 2157
+
 Bianchi_Elena A4B4C4D4E4F4G3H4 15.02.2004 1345
+
 Bianchi_Elena A4B4C4D4E4F4G3H4 15.02.2004 1345
+
 Verdi_Federica A3B3C3D3E3F3G3H3 25.09.1989 2157
