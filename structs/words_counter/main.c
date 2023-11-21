@@ -2,7 +2,9 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
+
 #define MAX_SIZE 100
+
 
 /* struct */
 typedef struct wordS {
@@ -12,6 +14,7 @@ typedef struct wordS {
     struct wordS *next;
 } wordT;
 
+
 /* declarations */
 void add_word (wordT **, char *);
 void lower_and_add_struct (FILE *, wordT **);
@@ -20,6 +23,7 @@ void free_list (wordT *);
 void output_results (FILE *, wordT *);
 
 
+/* main */
 int main(int argc, char *argv[]){
     if (argc != 3){
         fprintf(stderr, "error with the arguments\n%s <filename>\n", argv[0]);
@@ -45,6 +49,7 @@ int main(int argc, char *argv[]){
 
     free_list(headP);
 }
+
 
 /* add word function */
 void add_word (wordT **headP, char *word){
@@ -72,7 +77,6 @@ void add_word (wordT **headP, char *word){
 }
 
 
-
 /* lowercase & add to struct */
 void lower_and_add_struct (FILE *fp, wordT **headP){
     char word[MAX_SIZE];
@@ -95,6 +99,7 @@ wordT *get_text (FILE *fp){
 }
 
 
+/* free memory */
 void free_list (wordT *head){
     while (head != NULL){
         wordT *temp = head;
@@ -107,6 +112,7 @@ void free_list (wordT *head){
 }
 
 
+/* write the results to a file */
 void output_results (FILE *fp, wordT *head){
     while (head != NULL){
         wordT *temp = head;
