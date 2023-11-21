@@ -13,6 +13,12 @@ typedef struct wordS {
 } wordT;
 
 
+void add_word (wordT **, char *);
+void lower_and_add_struct (FILE *, wordT **);
+wordT *get_text (FILE *);
+void free_list (wordT *);
+void output_results (FILE *, wordT *);
+
 
 /* add word function */
 void add_word (wordT **headP, char *word){
