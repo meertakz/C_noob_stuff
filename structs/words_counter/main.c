@@ -4,7 +4,7 @@
 #include <ctype.h>
 #define MAX_SIZE 100
 
-
+/* struct */
 typedef struct wordS {
     char *word;
     int freq;
@@ -12,89 +12,12 @@ typedef struct wordS {
     struct wordS *next;
 } wordT;
 
-
+/* declarations */
 void add_word (wordT **, char *);
 void lower_and_add_struct (FILE *, wordT **);
 wordT *get_text (FILE *);
 void free_list (wordT *);
 void output_results (FILE *, wordT *);
-
-
-/* add word function */
-void add_word (wordT **headP, char *word){
-    wordT *current = *headP;
-
-    while (current != NULL){
-        if (strcmp(current->word, word) == 0){
-            // word already in the list
-            current->freq++;
-            return;
-        }
-        current = current->next;
-    }
-    // if it is not existent, add new
-    wordT *newWord = (wordT *) malloc (sizeof(wordT));
-    if (newWord == NULL){
-        fprintf(stderr, "memory allocation failed\n");
-        exit(1);
-    }
-    newWord->length = 10 - strlen(word);
-    newWord->word = strdup(word);
-    newWord->freq = 1;
-    newWord->next = *headP;
-    *headP = newWord;
-}
-
-
-
-/* lowercase & add to struct */
-void lower_and_add_struct (FILE *fp, wordT **headP){
-    char word[MAX_SIZE];
-
-    while (fscanf(fp, "%s", word) == 1){
-        // convert to lowercase
-        for (int i=0; word[i]; i++){
-            word[i] = tolower(word[i]);
-        }
-        // add to struct function
-        add_word(headP, word);
-    }
-}
-
-
-wordT *get_text (FILE *fp){
-    wordT *headP = NULL;
-    lower_and_add_struct(fp, &headP);
-    return headP;
-}
-
-
-void free_list (wordT *head){
-    while (head != NULL){
-        wordT *temp = head;
-        head = head->next;
-        // free word
-        free(temp->word);
-        // free node
-        free(temp);
-    }
-}
-
-
-void output_results (FILE *fp, wordT *head){
-    while (head != NULL){
-        wordT *temp = head;
-        head = head->next;
-
-
-        fprintf(fp, "THE WORD <%s>", temp->word);
-        for (int i=0; i<temp->length; i++){
-            fprintf(fp, " ");
-        }
-        fprintf(fp,"APPEARED <%d> time(s)\n", temp->freq);
-    }
-}
-
 
 
 int main(int argc, char *argv[]){
