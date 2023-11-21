@@ -17,6 +17,7 @@ Then, the program has to:
 - move left again and print Bianchi (second -)
 - do not move and print Bianchi again (third -)
 - move right and print Verdi (first +):
+___________________________________________________
 
 Giallo_Antonio A2B2C2D2E2F2G2H2 13.11.2007 1140
 
