@@ -100,8 +100,7 @@ void write (employee_t *headPtr, char *name, char *command)
         exit(1);
     }
 
-    fprintf (stdout, "%s %s %s %d\n",
-             tmpPtr->name, tmpPtr->id, tmpPtr->date, tmpPtr->salary);
+    fprintf (stdout, "%s %s %s %d\n", tmpPtr->name, tmpPtr->id, tmpPtr->date, tmpPtr->salary);
 
     for (i=0; i<strlen(command); i++) {
         if (command[i] == '+') {
