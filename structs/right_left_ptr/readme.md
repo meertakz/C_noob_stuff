@@ -1,7 +1,7 @@
 Let the command line parameters be the following
-
+'''
 file.txt Giallo_Antonio ---+
-
+'''
 and the input file be the following
 ___________________________________________________
 Rossi_Alberto A1B1C1D1E1F1G1H1 03.12.1998 1845
