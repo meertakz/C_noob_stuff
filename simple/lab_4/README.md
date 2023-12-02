@@ -42,3 +42,9 @@ __________________
 that given and integer value n (and any other parameters considered as
 necessary) prints-out a triangle containing increasing integer
 numbers
+
+## G. Implement the previous function ##
+```void triangle (int n, ...);```
+
+without using any iterative construct, i.e., using recursion
+to "move" along both rows and columns of the triangle
