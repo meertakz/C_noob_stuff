@@ -22,3 +22,10 @@ and
 C_{n} = sum_{i=0}^{i=(n-1)} (C_i * C_{n-1-i})     for n>=1`
 __________________
 
+## D. Function ##
+```int countSpaces (char *s);```
+
+which counts and returns the number of white-space characters that
+appear in a string s
+__________________
+
