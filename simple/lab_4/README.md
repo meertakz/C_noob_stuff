@@ -17,8 +17,8 @@ __________________
 
 to compute and to return the Catalan number of order n
 
-`(C_0 = 1     for n=0
+`C_0 = 1     for n=0
 and
-C_{n} = sum_{i=0}^{i=(n-1)} (C_i * C_{n-1-i})     for n>=1)`
+C_{n} = sum_{i=0}^{i=(n-1)} (C_i * C_{n-1-i})     for n>=1`
 __________________
 
