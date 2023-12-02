@@ -42,6 +42,7 @@ __________________
 that given and integer value n (and any other parameters considered as
 necessary) prints-out a triangle containing increasing integer
 numbers
+__________________
 
 ## G. Implement the previous function ##
 ```void triangle (int n, ...);```
