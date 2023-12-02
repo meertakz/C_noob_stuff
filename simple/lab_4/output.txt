@@ -1,0 +1,16 @@
+-- Mul: 5 x 18 = 90
+-- Decimal to Binary Conversion: (base 10) 35 = (base 2) 100011
+-- Catalan Numbers: 1 1 2 5 14 42 132 429 1430 4862 
+-- Count Spaces in (This is my string to check for spaces) = 7
+-- (aro un aut odrom o o mordo tua nu ora) is palindrome
+-- Triangle A:
+1 
+2 2 
+3 3 3 
+4 4 4 4 
+-- Triangle B:
+1 
+2 2 
+3 3 3 
+4 4 4 4 
+5 5 5 5 5 
