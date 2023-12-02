@@ -29,3 +29,16 @@ which counts and returns the number of white-space characters that
 appear in a string s
 __________________
 
+## E. Function ##
+```int isPalindrome (char *s, int l);```
+
+that takes a string s and its length l as arguments and recursively
+determines whether the string is palindrome. Returns 1 if the string is palindrome, 0 otherwise
+__________________
+
+## F. Function ##
+```void triangle (int n, ...);```
+
+that given and integer value n (and any other parameters considered as
+necessary) prints-out a triangle containing increasing integer
+numbers
