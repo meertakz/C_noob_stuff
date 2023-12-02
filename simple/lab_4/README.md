@@ -1,4 +1,4 @@
-A. Function
+## A. Function ##
 
 ```res = mult (x, y);```
 
