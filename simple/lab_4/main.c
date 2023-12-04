@@ -82,10 +82,7 @@ int main(void)
     return EXIT_SUCCESS;
 }
 
-int mult (
-        int x,
-        int y
-)
+int mult (int x, int y)
 {
     int res;
 
@@ -99,11 +96,7 @@ int mult (
     return (res);
 }
 
-void d2b (
-        int d,
-        int *b,
-        int *np
-)
+void d2b (int d, int *b, int *np)
 {
     if (d==0)
         return;
@@ -115,9 +108,7 @@ void d2b (
     return;
 }
 
-int catalan (
-        int n
-)
+int catalan (int n)
 {
     int i, res;
 
@@ -131,9 +122,7 @@ int catalan (
     return res;
 }
 
-int countSpaces (
-        char *s
-)
+int countSpaces (char *s)
 {
     if (*s=='\0')
         return 0;
@@ -141,10 +130,7 @@ int countSpaces (
         return ((isspace(*s) ? 1 : 0) + countSpaces(s+1));
 }
 
-int isPalindrome (
-        char *s,
-        int len
-)
+int isPalindrome (char *s, int len)
 {
     if (len <=1 )
         return 1;
@@ -152,10 +138,7 @@ int isPalindrome (
         return ((s[0]==s[len-1]) && isPalindrome(s+1, len-2));
 }
 
-void triangleA (
-        int n,
-        int i
-)
+void triangleA (int n, int i)
 {
     int j;
 
@@ -170,10 +153,7 @@ void triangleA (
     triangleA (n, i+1);
 }
 
-void triangleB (
-        int n,
-        int i,
-        int j)
+void triangleB (int n, int i, int j)
 {
     if (i>n) {
         return;
