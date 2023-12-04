@@ -9,6 +9,7 @@ void gray (int **, int, int, int);
 int **malloc2d (int, int);
 void printMat (int **, int, int);
 
+
 int main (int argc, char *argv[])
 {
     int n, N;
@@ -25,6 +26,7 @@ int main (int argc, char *argv[])
 
     return 0;
 }
+
 
 void gray (int **mat,int n, int N, int l)
 {
@@ -51,6 +53,7 @@ void gray (int **mat,int n, int N, int l)
         mat[mirror+r][n-l-1] = 1;
     }
 
+    
 #if DEBUG
     // Debug Printing
     printf ("Matrix at Recursion Level %d:\n", l);
@@ -59,6 +62,7 @@ void gray (int **mat,int n, int N, int l)
     // Recur
     gray (mat, n, N, l+1);
 }
+
 
 int **malloc2d (int N, int n)
 {
@@ -80,6 +84,7 @@ int **malloc2d (int N, int n)
 
     return (mat);
 }
+
 
 void printMat (int **mat,int n,int N)
 {
