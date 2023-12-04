@@ -6,7 +6,8 @@
 #define EXIT_SUCCESS 0
 #define N  10
 
-/* function prototypes */
+
+/* prototypes */
 int mult (int, int);
 void d2b (int, int *, int *);
 int catalan (int);
@@ -15,9 +16,8 @@ int isPalindrome (char *, int);
 void triangleA (int, int);
 void triangleB (int, int, int);
 
-/*
- *  main program
- */
+
+/* main */
 int main(void)
 {
     /* Part A */
@@ -27,7 +27,7 @@ int main(void)
         res = mult (x, y);
         fprintf (stdout, "-- Mul: %d x %d = %d\n", x, y, res);
     }
-
+    
     /* Part B */
     {
         int i, b[10], d = 35, n = 0;
@@ -82,6 +82,7 @@ int main(void)
     return EXIT_SUCCESS;
 }
 
+
 int mult (int x, int y)
 {
     int res;
@@ -96,6 +97,7 @@ int mult (int x, int y)
     return (res);
 }
 
+
 void d2b (int d, int *b, int *np)
 {
     if (d==0)
@@ -107,6 +109,7 @@ void d2b (int d, int *b, int *np)
     d2b (d, b, np);
     return;
 }
+
 
 int catalan (int n)
 {
@@ -122,6 +125,7 @@ int catalan (int n)
     return res;
 }
 
+
 int countSpaces (char *s)
 {
     if (*s=='\0')
@@ -130,6 +134,7 @@ int countSpaces (char *s)
         return ((isspace(*s) ? 1 : 0) + countSpaces(s+1));
 }
 
+
 int isPalindrome (char *s, int len)
 {
     if (len <=1 )
@@ -137,6 +142,7 @@ int isPalindrome (char *s, int len)
     else
         return ((s[0]==s[len-1]) && isPalindrome(s+1, len-2));
 }
+
 
 void triangleA (int n, int i)
 {
@@ -152,6 +158,7 @@ void triangleA (int n, int i)
 
     triangleA (n, i+1);
 }
+
 
 void triangleB (int n, int i, int j)
 {
