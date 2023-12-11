@@ -9,9 +9,10 @@ A file includes a labyrinth with the following specifications:
 
 
 
-
+```
  - '@' indicates the initial position of a human being
  - ' ' represents corridors (empty cells)
  - '*' represents walls (full cells)
  - '#' represents exit points.
 
+```
