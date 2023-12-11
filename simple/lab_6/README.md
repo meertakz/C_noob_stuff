@@ -4,9 +4,9 @@ A file includes a labyrinth with the following specifications:
 - the following R lines specify the matrix rows (each one with C
   characters), where each
 
-  ``
-  - '@' indicates the initial position of a human being
-  - ' ' represents corridors (empty cells)
-  - '*' represents walls (full cells)
-  - '#' represents exit points.
-  ``
+
+``  - '@' indicates the initial position of a human being``
+``  - ' ' represents corridors (empty cells)``
+``  - '*' represents walls (full cells)``
+``  - '#' represents exit points.``
+
