@@ -143,7 +143,7 @@ int main(){
     }
 
 
-    tmp = hash_table_lookup("Musra");
+    tmp = hash_table_lookup("I_STILL_DONT_EXIST");
     if (tmp == NULL){
         printf("not found\n");
     } else {
