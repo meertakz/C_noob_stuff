@@ -5,8 +5,8 @@ A file includes a labyrinth with the following specifications:
   characters), where each
 
 
-``  - '@' indicates the initial position of a human being``
-``  - ' ' represents corridors (empty cells)``
-``  - '*' represents walls (full cells)``
-``  - '#' represents exit points.``
+ - '@' indicates the initial position of a human being
+ - ' ' represents corridors (empty cells)
+ - '*' represents walls (full cells)
+ - '#' represents exit points.
 
