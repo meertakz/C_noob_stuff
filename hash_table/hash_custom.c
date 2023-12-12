@@ -125,7 +125,9 @@ int main() {
     }
 }
 
-
+/*
+ * functions
+ */
 
 item_t *newItem(int key, int data) {
     item_t *result = malloc(sizeof(item_t));
@@ -195,7 +197,9 @@ int hashCode(int key, int size) {
 int insert(hashTable_t *table, int key, int data) {
     int result = 0;
     if (isFull(table)) {
-        printf("hash table is full..\n");
+        printf("==================\n");
+        printf(". . . errore . . .\n");
+        printf("hash table is full\n");
     } else {
         item_t *item = newItem(key, data);
         int index = hashCode(key, table->size);
