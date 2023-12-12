@@ -54,7 +54,7 @@ int main() {
         printf("2 --> delete item\n");
         printf("3 --> search item\n");
         printf("4 --> show  table\n");
-        printf("5 --> reset table\n");
+        printf("5 --> empty table\n");
         printf("6 --> # e x i t #\n");
         printf("==================\n");
         printf("enter #");
