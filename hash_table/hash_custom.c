@@ -66,7 +66,7 @@ int main() {
                     insert(table, i, i);
                 }
                 printf("==================\n");
-                printf("successfully filled.\n");
+                printf("@ filling success.     <<<\n");
                 break;
             }
             case 1: {
@@ -93,9 +93,9 @@ int main() {
                 itemIndex = search(table, k);
                 if (itemIndex != -1) {
                     item = table->array[itemIndex];
-                    printf("item (%d,%d) found.\n", item->key, item->data);
+                    printf("item (%d,%d) found.     <<<\n", item->key, item->data);
                 } else {
-                    printf("item not found !\n", k);
+                    printf("item not found !     <<<\n");
                 }
                 break;
             }
@@ -109,17 +109,18 @@ int main() {
                 for (int i = 0; i < size; i++) {
                     h_remove(table, i);
                 }
+                printf("hash table reset !     <<<\n");
                 break;
             }
             case 6: {
                 printf("==================\n");
-                printf(". . .good-bye. . .\n");
+                printf(". . .good-bye. . .     <<<\n");
                 printf("==================\n");
                 freeHashTable(table);
                 exit(0);
             }
             default: {
-                printf("Invalid choice. Try again.\n");
+                printf("Invalid choice. Try again.     <<<\n");
             }
         }
     }
